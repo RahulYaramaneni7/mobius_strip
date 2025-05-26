@@ -18,9 +18,9 @@ A Möbius strip in three dimensions is modeled by the MobiusStrip class. After s
 ```
 class MobiusStrip:
     def __init__(self, R=1.0, w=0.2, n=200):
-        self.R = R            # Radius from center to strip
-        self.w = w            # Width of the strip
-        self.n = n            # Resolution
+        self.R = R            
+        self.w = w            
+        self.n = n           
         self.u, self.v = np.meshgrid(
             np.linspace(0, 2 * np.pi, self.n),
             np.linspace(-self.w / 2, self.w / 2, self.n)
